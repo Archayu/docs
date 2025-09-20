@@ -1,10 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "name": "Discolink",
-  "theme": "palm",
-  "colors": {
-   "primary": "#a6d189"
+  "theme": "willow",
+   "colors": {
+    "primary": "#006AD4",
+    "light": "#007FFF",
+    "dark": "#006AD4"
   },
+    "favicon": "favicon.svg",
   "navigation": {
     "languages": [
       {

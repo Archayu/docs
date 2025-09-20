@@ -1,132 +1,14 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "name": "Discolink",
-  "theme": "linden",
+  "theme": "maple",
   "colors": {
-    "primary": "#4f46e5"
+   "primary": "#ff0000"
   },
   "navigation": {
     "languages": [
       {
         "language": "en",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": ["docs/README"]
-          },
-          {
-            "group": "Globals",
-            "pages": ["docs/globals"]
-          },
-          {
-            "group": "Classes",
-            "pages": [
-              "docs/classes/FilterManager",
-              "docs/classes/LavaLyrics",
-              "docs/classes/Node",
-              "docs/classes/NodeManager",
-              "docs/classes/Player",
-              "docs/classes/Playlist",
-              "docs/classes/Queue",
-              "docs/classes/QueueManager",
-              "docs/classes/REST",
-              "docs/classes/Track",
-              "docs/classes/VoiceManager",
-              "docs/classes/VoiceRegion",
-              "docs/classes/VoiceState"
-            ]
-          },
-          {
-            "group": "Functions",
-            "pages": [
-              "docs/functions/formatDuration",
-              "docs/functions/isArray",
-              "docs/functions/isNumber",
-              "docs/functions/isRecord",
-              "docs/functions/isString",
-              "docs/functions/noop"
-            ]
-          },
-          {
-            "group": "Interfaces",
-            "pages": [
-              "docs/interfaces/APIPlayer",
-              "docs/interfaces/APIPlaylist",
-              "docs/interfaces/APITrack",
-              "docs/interfaces/APIVoiceState",
-              "docs/interfaces/BalancingRoutePlannerDetails",
-              "docs/interfaces/BalancingRoutePlannerStatus",
-              "docs/interfaces/BaseEventPayload",
-              "docs/interfaces/BaseMessagePayload",
-              "docs/interfaces/BaseRoutePlannerDetails",
-              "docs/interfaces/ChannelMixFilter",
-              "docs/interfaces/ClientHeaders",
-              "docs/interfaces/ClientReadyPayload",
-              "docs/interfaces/CommonDispatchPayloadInfo",
-              "docs/interfaces/ConnectOptions",
-              "docs/interfaces/CreateQueueOptions",
-              "docs/interfaces/DistortionFilter",
-              "docs/interfaces/EmptyLoadResult",
-              "docs/interfaces/EmptySearchResult",
-              "docs/interfaces/EqualizerBand",
-              "docs/interfaces/ErrorLoadResult",
-              "docs/interfaces/ErrorSearchResult",
-              "docs/interfaces/Exception",
-              "docs/interfaces/FailingAddress",
-              "docs/interfaces/Filters",
-              "docs/interfaces/FrameStats",
-              "docs/interfaces/IPBlock",
-              "docs/interfaces/KaraokeFilter",
-              "docs/interfaces/LavalinkGit",
-              "docs/interfaces/LavalinkInfo",
-              "docs/interfaces/LavalinkPlugin",
-              "docs/interfaces/LavalinkVersion",
-              "docs/interfaces/LowPassFilter",
-              "docs/interfaces/LyricsFoundEvent",
-              "docs/interfaces/LyricsLine",
-              "docs/interfaces/LyricsLineEvent",
-              "docs/interfaces/LyricsNotFoundEvent",
-              "docs/interfaces/LyricsObject",
-              "docs/interfaces/NanoRoutePlannerDetails",
-              "docs/interfaces/NanoRoutePlannerStatus",
-              "docs/interfaces/NodeCPU",
-              "docs/interfaces/NodeEventMap",
-              "docs/interfaces/NodeMemory",
-              "docs/interfaces/NodeMetrics",
-              "docs/interfaces/NodeOptions",
-              "docs/interfaces/NodeStats",
-              "docs/interfaces/NullishRoutePlannerStatus",
-              "docs/interfaces/PlayerEventMap",
-              "docs/interfaces/PlayerOptions",
-              "docs/interfaces/PlayerState",
-              "docs/interfaces/PlayerUpdatePayload",
-              "docs/interfaces/PlayerUpdateQueryParams",
-              "docs/interfaces/PlayerUpdateRequestBody",
-              "docs/interfaces/PlayerUpdateTrackData",
-              "docs/interfaces/PlaylistInfo",
-              "docs/interfaces/PlaylistLoadResult"
-            ]
-          },
-          {
-            "group": "Enumerations",
-            "pages": [
-              "docs/enumerations/CloseCodes",
-              "docs/enumerations/EventType",
-              "docs/enumerations/IPBlockType",
-              "docs/enumerations/LoadType",
-              "docs/enumerations/OPType",
-              "docs/enumerations/RoutePlannerType",
-              "docs/enumerations/Severity",
-              "docs/enumerations/TrackEndReason",
-              "docs/enumerations/VoiceCloseCodes"
-            ]
-          }
-        ]
-      }
-    ],
-    "versions": [
-      {
-        "version": "1.0.0",
         "groups": [
           {
             "group": "Overview",

@@ -1,6 +1,7 @@
 {
+  "$schema": "https://mintlify.com/docs.json",
   "name": "Discolink",
-  "theme": "willow",
+  "theme": "linden",
   "colors": {
     "primary": "#4f46e5"
   },

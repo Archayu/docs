@@ -1,0 +1,169 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / LavaLyrics
+
+# Class: LavaLyrics
+
+Defined in: [Plugins/LavaLyrics.ts:11](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Plugins/LavaLyrics.ts#L11)
+
+## Implements
+
+- [`Plugin`](../interfaces/Plugin.md)
+
+## Constructors
+
+### Constructor
+
+> **new LavaLyrics**(): `LavaLyrics`
+
+#### Returns
+
+`LavaLyrics`
+
+## Properties
+
+### name
+
+> **name**: `"lavalyrics"`
+
+Defined in: [Plugins/LavaLyrics.ts:12](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Plugins/LavaLyrics.ts#L12)
+
+#### Implementation of
+
+[`Plugin`](../interfaces/Plugin.md).[`name`](../interfaces/Plugin.md#name)
+
+***
+
+### eventMap
+
+> **eventMap**: `object`
+
+Defined in: [Plugins/LavaLyrics.ts:15](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Plugins/LavaLyrics.ts#L15)
+
+#### lyricsFound
+
+> **lyricsFound**: \[[`Queue`](Queue.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>, [`LyricsObject`](../interfaces/LyricsObject.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>\]
+
+#### lyricsNotFound
+
+> **lyricsNotFound**: \[[`Queue`](Queue.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>\]
+
+#### lyricsLine
+
+> **lyricsLine**: \[[`Queue`](Queue.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>, [`LyricsLine`](../interfaces/LyricsLine.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>, `number`, `boolean`\]
+
+#### Implementation of
+
+[`Plugin`](../interfaces/Plugin.md).[`eventMap`](../interfaces/Plugin.md#eventmap)
+
+## Methods
+
+### init()
+
+> **init**(`player`): `void`
+
+Defined in: [Plugins/LavaLyrics.ts:21](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Plugins/LavaLyrics.ts#L21)
+
+#### Parameters
+
+##### player
+
+[`Player`](Player.md)
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+[`Plugin`](../interfaces/Plugin.md).[`init`](../interfaces/Plugin.md#init)
+
+***
+
+### fetch()
+
+> **fetch**(`track`, `node`, `skipTrackSource`): `Promise`\<`null` \| [`LyricsObject`](../interfaces/LyricsObject.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>\>
+
+Defined in: [Plugins/LavaLyrics.ts:26](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Plugins/LavaLyrics.ts#L26)
+
+#### Parameters
+
+##### track
+
+`string`
+
+##### node
+
+`string`
+
+##### skipTrackSource
+
+`boolean` = `false`
+
+#### Returns
+
+`Promise`\<`null` \| [`LyricsObject`](../interfaces/LyricsObject.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>\>
+
+***
+
+### subscribe()
+
+> **subscribe**(`guildId`, `skipTrackSource`): `Promise`\<`boolean`\>
+
+Defined in: [Plugins/LavaLyrics.ts:39](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Plugins/LavaLyrics.ts#L39)
+
+#### Parameters
+
+##### guildId
+
+`string`
+
+##### skipTrackSource
+
+`boolean` = `false`
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+***
+
+### unsubscribe()
+
+> **unsubscribe**(`guildId`): `Promise`\<`boolean`\>
+
+Defined in: [Plugins/LavaLyrics.ts:57](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Plugins/LavaLyrics.ts#L57)
+
+#### Parameters
+
+##### guildId
+
+`string`
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+***
+
+### fetchCurrent()
+
+> **fetchCurrent**(`guildId`, `skipTrackSource`): `Promise`\<`null` \| [`LyricsObject`](../interfaces/LyricsObject.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>\>
+
+Defined in: [Plugins/LavaLyrics.ts:72](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Plugins/LavaLyrics.ts#L72)
+
+#### Parameters
+
+##### guildId
+
+`string`
+
+##### skipTrackSource
+
+`boolean` = `false`
+
+#### Returns
+
+`Promise`\<`null` \| [`LyricsObject`](../interfaces/LyricsObject.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>\>

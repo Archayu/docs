@@ -1,0 +1,119 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / PlayOptions
+
+# Interface: PlayOptions\<Context, UserData\>
+
+Defined in: [Typings/Main/Player.ts:102](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L102)
+
+## Extends
+
+- [`SearchOptions`](SearchOptions.md).[`CreateQueueOptions`](CreateQueueOptions.md)\<`Context`\>
+
+## Type Parameters
+
+### Context
+
+`Context` *extends* `Record`\<`string`, `unknown`\> = [`EmptyObject`](../type-aliases/EmptyObject.md)
+
+### UserData
+
+`UserData` *extends* [`JsonObject`](../type-aliases/JsonObject.md) = [`EmptyObject`](../type-aliases/EmptyObject.md)
+
+## Properties
+
+### userData?
+
+> `optional` **userData**: `UserData`
+
+Defined in: [Typings/Main/Player.ts:107](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L107)
+
+***
+
+### node?
+
+> `optional` **node**: `string`
+
+Defined in: [Typings/Main/Player.ts:98](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L98)
+
+#### Inherited from
+
+[`SearchOptions`](SearchOptions.md).[`node`](SearchOptions.md#node)
+
+***
+
+### prefix?
+
+> `optional` **prefix**: `string`
+
+Defined in: [Typings/Main/Player.ts:99](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L99)
+
+#### Inherited from
+
+[`SearchOptions`](SearchOptions.md).[`prefix`](SearchOptions.md#prefix)
+
+***
+
+### guildId
+
+> **guildId**: `string`
+
+Defined in: [Typings/Queue/QueueManager.ts:86](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L86)
+
+#### Inherited from
+
+[`CreateQueueOptions`](CreateQueueOptions.md).[`guildId`](CreateQueueOptions.md#guildid)
+
+***
+
+### voiceId
+
+> **voiceId**: `string`
+
+Defined in: [Typings/Queue/QueueManager.ts:87](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L87)
+
+#### Inherited from
+
+[`CreateQueueOptions`](CreateQueueOptions.md).[`voiceId`](CreateQueueOptions.md#voiceid)
+
+***
+
+### context?
+
+> `optional` **context**: `Context`
+
+Defined in: [Typings/Queue/QueueManager.ts:89](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L89)
+
+#### Inherited from
+
+[`CreateQueueOptions`](CreateQueueOptions.md).[`context`](CreateQueueOptions.md#context-1)
+
+***
+
+### volume?
+
+> `optional` **volume**: `number`
+
+Defined in: [Typings/API/Rest.ts:557](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L557)
+
+The player volume, in percentage, from 0 to 1000
+
+#### Inherited from
+
+[`PlayerUpdateRequestBody`](PlayerUpdateRequestBody.md).[`volume`](PlayerUpdateRequestBody.md#volume)
+
+***
+
+### filters?
+
+> `optional` **filters**: [`Filters`](Filters.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>
+
+Defined in: [Typings/API/Rest.ts:567](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L567)
+
+The new filters to apply. This will override all previously applied filters
+
+#### Inherited from
+
+[`PlayerUpdateRequestBody`](PlayerUpdateRequestBody.md).[`filters`](PlayerUpdateRequestBody.md#filters)

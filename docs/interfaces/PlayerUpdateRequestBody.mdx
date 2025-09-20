@@ -1,0 +1,79 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / PlayerUpdateRequestBody
+
+# Interface: PlayerUpdateRequestBody
+
+Defined in: [Typings/API/Rest.ts:538](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L538)
+
+## Properties
+
+### track?
+
+> `optional` **track**: `null` \| [`PlayerUpdateTrackData`](PlayerUpdateTrackData.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>
+
+Defined in: [Typings/API/Rest.ts:542](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L542)
+
+Specification for a new track to load, as well as user data to set
+
+***
+
+### position?
+
+> `optional` **position**: `number`
+
+Defined in: [Typings/API/Rest.ts:547](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L547)
+
+The track position in milliseconds
+
+***
+
+### endTime?
+
+> `optional` **endTime**: `number`
+
+Defined in: [Typings/API/Rest.ts:552](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L552)
+
+The track end time in milliseconds (must be > 0). `null` resets this if it was set previously
+
+***
+
+### volume?
+
+> `optional` **volume**: `number`
+
+Defined in: [Typings/API/Rest.ts:557](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L557)
+
+The player volume, in percentage, from 0 to 1000
+
+***
+
+### paused?
+
+> `optional` **paused**: `boolean`
+
+Defined in: [Typings/API/Rest.ts:562](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L562)
+
+Whether the player is paused
+
+***
+
+### filters?
+
+> `optional` **filters**: [`Filters`](Filters.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>
+
+Defined in: [Typings/API/Rest.ts:567](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L567)
+
+The new filters to apply. This will override all previously applied filters
+
+***
+
+### voice?
+
+> `optional` **voice**: [`APIVoiceState`](APIVoiceState.md)
+
+Defined in: [Typings/API/Rest.ts:572](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L572)
+
+Information required for connecting to Discord

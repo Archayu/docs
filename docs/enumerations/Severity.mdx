@@ -1,0 +1,41 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / Severity
+
+# Enumeration: Severity
+
+Defined in: [Typings/API/Websocket.ts:3](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L3)
+
+## Enumeration Members
+
+### Common
+
+> **Common**: `"common"`
+
+Defined in: [Typings/API/Websocket.ts:7](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L7)
+
+The cause is known and expected, indicates that there is nothing wrong with the library itself
+
+***
+
+### Suspicious
+
+> **Suspicious**: `"suspicious"`
+
+Defined in: [Typings/API/Websocket.ts:13](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L13)
+
+The cause might not be exactly known, but is possibly caused by outside factors.
+For example when an outside service responds in a format that we do not expect
+
+***
+
+### Fault
+
+> **Fault**: `"fault"`
+
+Defined in: [Typings/API/Websocket.ts:19](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L19)
+
+The probable cause is an issue with the library or there is no way to tell what the cause might be.
+This is the default level and other levels are used in cases where the thrower has more in-depth knowledge about the error

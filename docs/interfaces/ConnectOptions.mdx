@@ -1,0 +1,65 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / ConnectOptions
+
+# Interface: ConnectOptions
+
+Defined in: [Typings/Voice/VoiceManager.ts:47](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Voice/VoiceManager.ts#L47)
+
+## Extends
+
+- `Pick`\<[`CreateQueueOptions`](CreateQueueOptions.md), `"context"` \| `"filters"` \| `"node"` \| `"volume"`\>
+
+## Properties
+
+### volume?
+
+> `optional` **volume**: `number`
+
+Defined in: [Typings/API/Rest.ts:557](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L557)
+
+The player volume, in percentage, from 0 to 1000
+
+#### Inherited from
+
+[`PlayerUpdateRequestBody`](PlayerUpdateRequestBody.md).[`volume`](PlayerUpdateRequestBody.md#volume)
+
+***
+
+### filters?
+
+> `optional` **filters**: [`Filters`](Filters.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>
+
+Defined in: [Typings/API/Rest.ts:567](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L567)
+
+The new filters to apply. This will override all previously applied filters
+
+#### Inherited from
+
+[`PlayerUpdateRequestBody`](PlayerUpdateRequestBody.md).[`filters`](PlayerUpdateRequestBody.md#filters)
+
+***
+
+### node?
+
+> `optional` **node**: `string`
+
+Defined in: [Typings/Queue/QueueManager.ts:88](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L88)
+
+#### Inherited from
+
+`Pick.node`
+
+***
+
+### context?
+
+> `optional` **context**: [`EmptyObject`](../type-aliases/EmptyObject.md)
+
+Defined in: [Typings/Queue/QueueManager.ts:89](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L89)
+
+#### Inherited from
+
+`Pick.context`

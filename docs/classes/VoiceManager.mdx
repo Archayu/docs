@@ -1,0 +1,277 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / VoiceManager
+
+# Class: VoiceManager
+
+Defined in: [Voice/VoiceManager.ts:22](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceManager.ts#L22)
+
+## Implements
+
+- `Partial`\<`Map`\<`string`, [`VoiceState`](VoiceState.md)\>\>
+
+## Constructors
+
+### Constructor
+
+> **new VoiceManager**(`player`): `VoiceManager`
+
+Defined in: [Voice/VoiceManager.ts:33](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceManager.ts#L33)
+
+#### Parameters
+
+##### player
+
+[`Player`](Player.md)
+
+#### Returns
+
+`VoiceManager`
+
+## Properties
+
+### regions
+
+> `readonly` **regions**: `Map`\<`string`, [`VoiceRegion`](VoiceRegion.md)\>
+
+Defined in: [Voice/VoiceManager.ts:31](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceManager.ts#L31)
+
+## Accessors
+
+### size
+
+#### Get Signature
+
+> **get** **size**(): `number`
+
+Defined in: [Voice/VoiceManager.ts:42](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceManager.ts#L42)
+
+##### Returns
+
+`number`
+
+the number of elements in the Map.
+
+#### Implementation of
+
+`Partial.size`
+
+***
+
+### cache
+
+#### Get Signature
+
+> **get** **cache**(): `Map`\<`string`, [`VoiceStateInfo`](../interfaces/VoiceStateInfo.md)\>
+
+Defined in: [Voice/VoiceManager.ts:46](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceManager.ts#L46)
+
+##### Returns
+
+`Map`\<`string`, [`VoiceStateInfo`](../interfaces/VoiceStateInfo.md)\>
+
+## Methods
+
+### get()
+
+> **get**(`guildId`): `undefined` \| [`VoiceState`](VoiceState.md)
+
+Defined in: [Voice/VoiceManager.ts:50](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceManager.ts#L50)
+
+Returns a specified element from the Map object. If the value that is associated to the provided key is an object, then you will get a reference to that object and any change made to that object will effectively modify it inside the Map.
+
+#### Parameters
+
+##### guildId
+
+`string`
+
+#### Returns
+
+`undefined` \| [`VoiceState`](VoiceState.md)
+
+Returns the element associated with the specified key. If no element is associated with the specified key, undefined is returned.
+
+#### Implementation of
+
+`Partial.get`
+
+***
+
+### has()
+
+> **has**(`guildId`): `boolean`
+
+Defined in: [Voice/VoiceManager.ts:54](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceManager.ts#L54)
+
+#### Parameters
+
+##### guildId
+
+`string`
+
+#### Returns
+
+`boolean`
+
+boolean indicating whether an element with the specified key exists or not.
+
+#### Implementation of
+
+`Partial.has`
+
+***
+
+### keys()
+
+> **keys**(): `MapIterator`\<`string`\>
+
+Defined in: [Voice/VoiceManager.ts:58](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceManager.ts#L58)
+
+Returns an iterable of keys in the map
+
+#### Returns
+
+`MapIterator`\<`string`\>
+
+#### Implementation of
+
+`Partial.keys`
+
+***
+
+### values()
+
+> **values**(): `MapIterator`\<[`VoiceState`](VoiceState.md)\>
+
+Defined in: [Voice/VoiceManager.ts:62](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceManager.ts#L62)
+
+Returns an iterable of values in the map
+
+#### Returns
+
+`MapIterator`\<[`VoiceState`](VoiceState.md)\>
+
+#### Implementation of
+
+`Partial.values`
+
+***
+
+### entries()
+
+> **entries**(): `MapIterator`\<\[`string`, [`VoiceState`](VoiceState.md)\]\>
+
+Defined in: [Voice/VoiceManager.ts:66](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceManager.ts#L66)
+
+Returns an iterable of key, value pairs for every entry in the map.
+
+#### Returns
+
+`MapIterator`\<\[`string`, [`VoiceState`](VoiceState.md)\]\>
+
+#### Implementation of
+
+`Partial.entries`
+
+***
+
+### destroy()
+
+> **destroy**(`guildId`, `reason`): `Promise`\<`void`\>
+
+Defined in: [Voice/VoiceManager.ts:70](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceManager.ts#L70)
+
+#### Parameters
+
+##### guildId
+
+`string`
+
+##### reason
+
+`string` = `"destroyed"`
+
+#### Returns
+
+`Promise`\<`void`\>
+
+***
+
+### connect()
+
+> **connect**(`guildId`, `voiceId`, `options?`): `Promise`\<[`VoiceState`](VoiceState.md)\>
+
+Defined in: [Voice/VoiceManager.ts:84](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceManager.ts#L84)
+
+#### Parameters
+
+##### guildId
+
+`string`
+
+##### voiceId
+
+`string`
+
+##### options?
+
+[`ConnectOptions`](../interfaces/ConnectOptions.md)
+
+#### Returns
+
+`Promise`\<[`VoiceState`](VoiceState.md)\>
+
+***
+
+### disconnect()
+
+> **disconnect**(`guildId`): `Promise`\<`void`\>
+
+Defined in: [Voice/VoiceManager.ts:141](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceManager.ts#L141)
+
+#### Parameters
+
+##### guildId
+
+`string`
+
+#### Returns
+
+`Promise`\<`void`\>
+
+***
+
+### handleDispatch()
+
+> **handleDispatch**(`payload`): `void`
+
+Defined in: [Voice/VoiceManager.ts:166](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceManager.ts#L166)
+
+#### Parameters
+
+##### payload
+
+`unknown`
+
+#### Returns
+
+`void`
+
+***
+
+### \[iterator\]()
+
+> **\[iterator\]**(): `MapIterator`\<\[`string`, [`VoiceState`](VoiceState.md)\]\>
+
+Defined in: [Voice/VoiceManager.ts:274](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceManager.ts#L274)
+
+#### Returns
+
+`MapIterator`\<\[`string`, [`VoiceState`](VoiceState.md)\]\>
+
+#### Implementation of
+
+`Partial.[iterator]`

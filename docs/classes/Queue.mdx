@@ -1,0 +1,685 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / Queue
+
+# Class: Queue\<Context\>
+
+Defined in: [Queue/Queue.ts:10](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L10)
+
+## Type Parameters
+
+### Context
+
+`Context` *extends* `Record`\<`string`, `unknown`\> = [`EmptyObject`](../type-aliases/EmptyObject.md)
+
+## Constructors
+
+### Constructor
+
+> **new Queue**\<`Context`\>(`player`, `guildId`, `context?`): `Queue`\<`Context`\>
+
+Defined in: [Queue/Queue.ts:25](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L25)
+
+#### Parameters
+
+##### player
+
+[`Player`](Player.md)
+
+##### guildId
+
+`string`
+
+##### context?
+
+`Context`
+
+#### Returns
+
+`Queue`\<`Context`\>
+
+## Properties
+
+### context
+
+> **context**: `Context`
+
+Defined in: [Queue/Queue.ts:20](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L20)
+
+***
+
+### voice
+
+> `readonly` **voice**: [`VoiceState`](VoiceState.md)
+
+Defined in: [Queue/Queue.ts:22](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L22)
+
+***
+
+### filters
+
+> `readonly` **filters**: [`FilterManager`](FilterManager.md)
+
+Defined in: [Queue/Queue.ts:23](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L23)
+
+## Accessors
+
+### node
+
+#### Get Signature
+
+> **get** **node**(): [`Node`](Node.md)
+
+Defined in: [Queue/Queue.ts:63](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L63)
+
+##### Returns
+
+[`Node`](Node.md)
+
+***
+
+### rest
+
+#### Get Signature
+
+> **get** **rest**(): [`REST`](REST.md)
+
+Defined in: [Queue/Queue.ts:67](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L67)
+
+##### Returns
+
+[`REST`](REST.md)
+
+***
+
+### guildId
+
+#### Get Signature
+
+> **get** **guildId**(): `string`
+
+Defined in: [Queue/Queue.ts:71](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L71)
+
+##### Returns
+
+`string`
+
+***
+
+### volume
+
+#### Get Signature
+
+> **get** **volume**(): `number`
+
+Defined in: [Queue/Queue.ts:75](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L75)
+
+##### Returns
+
+`number`
+
+***
+
+### paused
+
+#### Get Signature
+
+> **get** **paused**(): `boolean`
+
+Defined in: [Queue/Queue.ts:79](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L79)
+
+##### Returns
+
+`boolean`
+
+***
+
+### stopped
+
+#### Get Signature
+
+> **get** **stopped**(): `boolean`
+
+Defined in: [Queue/Queue.ts:83](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L83)
+
+##### Returns
+
+`boolean`
+
+***
+
+### autoplay
+
+#### Get Signature
+
+> **get** **autoplay**(): `boolean`
+
+Defined in: [Queue/Queue.ts:87](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L87)
+
+##### Returns
+
+`boolean`
+
+***
+
+### finished
+
+#### Get Signature
+
+> **get** **finished**(): `boolean`
+
+Defined in: [Queue/Queue.ts:91](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L91)
+
+##### Returns
+
+`boolean`
+
+***
+
+### destroyed
+
+#### Get Signature
+
+> **get** **destroyed**(): `boolean`
+
+Defined in: [Queue/Queue.ts:95](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L95)
+
+##### Returns
+
+`boolean`
+
+***
+
+### repeatMode
+
+#### Get Signature
+
+> **get** **repeatMode**(): [`RepeatMode`](../type-aliases/RepeatMode.md)
+
+Defined in: [Queue/Queue.ts:99](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L99)
+
+##### Returns
+
+[`RepeatMode`](../type-aliases/RepeatMode.md)
+
+***
+
+### isEmpty
+
+#### Get Signature
+
+> **get** **isEmpty**(): `boolean`
+
+Defined in: [Queue/Queue.ts:103](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L103)
+
+##### Returns
+
+`boolean`
+
+***
+
+### isPlaying
+
+#### Get Signature
+
+> **get** **isPlaying**(): `boolean`
+
+Defined in: [Queue/Queue.ts:107](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L107)
+
+##### Returns
+
+`boolean`
+
+***
+
+### hasNext
+
+#### Get Signature
+
+> **get** **hasNext**(): `boolean`
+
+Defined in: [Queue/Queue.ts:111](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L111)
+
+##### Returns
+
+`boolean`
+
+***
+
+### hasPrevious
+
+#### Get Signature
+
+> **get** **hasPrevious**(): `boolean`
+
+Defined in: [Queue/Queue.ts:115](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L115)
+
+##### Returns
+
+`boolean`
+
+***
+
+### track
+
+#### Get Signature
+
+> **get** **track**(): `null` \| [`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>
+
+Defined in: [Queue/Queue.ts:119](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L119)
+
+##### Returns
+
+`null` \| [`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>
+
+***
+
+### previousTrack
+
+#### Get Signature
+
+> **get** **previousTrack**(): `null` \| [`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>
+
+Defined in: [Queue/Queue.ts:123](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L123)
+
+##### Returns
+
+`null` \| [`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>
+
+***
+
+### tracks
+
+#### Get Signature
+
+> **get** **tracks**(): [`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>[]
+
+Defined in: [Queue/Queue.ts:127](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L127)
+
+##### Returns
+
+[`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>[]
+
+***
+
+### previousTracks
+
+#### Get Signature
+
+> **get** **previousTracks**(): [`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>[]
+
+Defined in: [Queue/Queue.ts:131](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L131)
+
+##### Returns
+
+[`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>[]
+
+***
+
+### length
+
+#### Get Signature
+
+> **get** **length**(): `number`
+
+Defined in: [Queue/Queue.ts:135](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L135)
+
+##### Returns
+
+`number`
+
+***
+
+### totalLength
+
+#### Get Signature
+
+> **get** **totalLength**(): `number`
+
+Defined in: [Queue/Queue.ts:139](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L139)
+
+##### Returns
+
+`number`
+
+***
+
+### duration
+
+#### Get Signature
+
+> **get** **duration**(): `number`
+
+Defined in: [Queue/Queue.ts:143](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L143)
+
+##### Returns
+
+`number`
+
+***
+
+### formattedDuration
+
+#### Get Signature
+
+> **get** **formattedDuration**(): `string`
+
+Defined in: [Queue/Queue.ts:147](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L147)
+
+##### Returns
+
+`string`
+
+***
+
+### currentTime
+
+#### Get Signature
+
+> **get** **currentTime**(): `number`
+
+Defined in: [Queue/Queue.ts:151](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L151)
+
+##### Returns
+
+`number`
+
+***
+
+### formattedCurrentTime
+
+#### Get Signature
+
+> **get** **formattedCurrentTime**(): `string`
+
+Defined in: [Queue/Queue.ts:157](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L157)
+
+##### Returns
+
+`string`
+
+## Methods
+
+### search()
+
+> **search**(`query`, `prefix`): `Promise`\<[`SearchResult`](../type-aliases/SearchResult.md)\>
+
+Defined in: [Queue/Queue.ts:171](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L171)
+
+#### Parameters
+
+##### query
+
+`string`
+
+##### prefix
+
+`string` = `...`
+
+#### Returns
+
+`Promise`\<[`SearchResult`](../type-aliases/SearchResult.md)\>
+
+***
+
+### add()
+
+> **add**(`source`, `userData?`): `Queue`\<`Context`\>
+
+Defined in: [Queue/Queue.ts:175](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L175)
+
+#### Parameters
+
+##### source
+
+[`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\> | [`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>[] | [`Playlist`](Playlist.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>
+
+##### userData?
+
+[`JsonObject`](../type-aliases/JsonObject.md)
+
+#### Returns
+
+`Queue`\<`Context`\>
+
+***
+
+### addRelated()
+
+> **addRelated**(`refTrack?`): `Promise`\<[`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>[]\>
+
+Defined in: [Queue/Queue.ts:193](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L193)
+
+#### Parameters
+
+##### refTrack?
+
+[`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>
+
+#### Returns
+
+`Promise`\<[`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>[]\>
+
+***
+
+### remove()
+
+#### Call Signature
+
+> **remove**(`index`): `undefined` \| [`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>
+
+Defined in: [Queue/Queue.ts:201](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L201)
+
+##### Parameters
+
+###### index
+
+`number`
+
+##### Returns
+
+`undefined` \| [`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>
+
+#### Call Signature
+
+> **remove**(`indices`): [`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>[]
+
+Defined in: [Queue/Queue.ts:202](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L202)
+
+##### Parameters
+
+###### indices
+
+`number`[]
+
+##### Returns
+
+[`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>[]
+
+***
+
+### jump()
+
+> **jump**(`index`): `Promise`\<[`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>\>
+
+Defined in: [Queue/Queue.ts:226](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L226)
+
+#### Parameters
+
+##### index
+
+`number`
+
+#### Returns
+
+`Promise`\<[`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>\>
+
+***
+
+### pause()
+
+> **pause**(): `Promise`\<`boolean`\>
+
+Defined in: [Queue/Queue.ts:240](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L240)
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+***
+
+### resume()
+
+> **resume**(): `Promise`\<`boolean`\>
+
+Defined in: [Queue/Queue.ts:245](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L245)
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+***
+
+### seek()
+
+> **seek**(`ms`): `Promise`\<`number`\>
+
+Defined in: [Queue/Queue.ts:251](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L251)
+
+#### Parameters
+
+##### ms
+
+`number`
+
+#### Returns
+
+`Promise`\<`number`\>
+
+***
+
+### next()
+
+> **next**(): `Promise`\<`null` \| [`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>\>
+
+Defined in: [Queue/Queue.ts:264](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L264)
+
+#### Returns
+
+`Promise`\<`null` \| [`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>\>
+
+***
+
+### previous()
+
+> **previous**(): `Promise`\<`null` \| [`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>\>
+
+Defined in: [Queue/Queue.ts:281](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L281)
+
+#### Returns
+
+`Promise`\<`null` \| [`Track`](Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>\>
+
+***
+
+### shuffle()
+
+> **shuffle**(`includePrevious`): `Queue`\<`Context`\>
+
+Defined in: [Queue/Queue.ts:286](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L286)
+
+#### Parameters
+
+##### includePrevious
+
+`boolean` = `false`
+
+#### Returns
+
+`Queue`\<`Context`\>
+
+***
+
+### setVolume()
+
+> **setVolume**(`volume`): `Promise`\<`number`\>
+
+Defined in: [Queue/Queue.ts:296](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L296)
+
+#### Parameters
+
+##### volume
+
+`number`
+
+#### Returns
+
+`Promise`\<`number`\>
+
+***
+
+### setAutoplay()
+
+> **setAutoplay**(`autoplay`): `boolean`
+
+Defined in: [Queue/Queue.ts:303](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L303)
+
+#### Parameters
+
+##### autoplay
+
+`boolean` = `false`
+
+#### Returns
+
+`boolean`
+
+***
+
+### setRepeatMode()
+
+> **setRepeatMode**(`repeatMode`): [`RepeatMode`](../type-aliases/RepeatMode.md)
+
+Defined in: [Queue/Queue.ts:309](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L309)
+
+#### Parameters
+
+##### repeatMode
+
+[`RepeatMode`](../type-aliases/RepeatMode.md) = `"none"`
+
+#### Returns
+
+[`RepeatMode`](../type-aliases/RepeatMode.md)
+
+***
+
+### stop()
+
+> **stop**(): `Promise`\<`void`\>
+
+Defined in: [Queue/Queue.ts:315](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L315)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+***
+
+### destroy()
+
+> **destroy**(`reason?`): `Promise`\<`void`\>
+
+Defined in: [Queue/Queue.ts:319](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/Queue.ts#L319)
+
+#### Parameters
+
+##### reason?
+
+`string`
+
+#### Returns
+
+`Promise`\<`void`\>

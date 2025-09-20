@@ -1,0 +1,207 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / FilterManager
+
+# Class: FilterManager\<PluginFilters\>
+
+Defined in: [Queue/FilterManager.ts:6](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/FilterManager.ts#L6)
+
+## Type Parameters
+
+### PluginFilters
+
+`PluginFilters` *extends* [`JsonObject`](../type-aliases/JsonObject.md) = [`EmptyObject`](../type-aliases/EmptyObject.md)
+
+## Constructors
+
+### Constructor
+
+> **new FilterManager**\<`PluginFilters`\>(`player`, `guildId`): `FilterManager`\<`PluginFilters`\>
+
+Defined in: [Queue/FilterManager.ts:11](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/FilterManager.ts#L11)
+
+#### Parameters
+
+##### player
+
+[`Player`](Player.md)
+
+##### guildId
+
+`string`
+
+#### Returns
+
+`FilterManager`\<`PluginFilters`\>
+
+## Accessors
+
+### data
+
+#### Get Signature
+
+> **get** **data**(): [`Filters`](../interfaces/Filters.md)\<`PluginFilters`\>
+
+Defined in: [Queue/FilterManager.ts:31](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/FilterManager.ts#L31)
+
+##### Returns
+
+[`Filters`](../interfaces/Filters.md)\<`PluginFilters`\>
+
+## Methods
+
+### get()
+
+> **get**\<`Name`\>(`name`): `null` \| [`FilterValue`](../type-aliases/FilterValue.md)\<`Name`, `PluginFilters`\>
+
+Defined in: [Queue/FilterManager.ts:35](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/FilterManager.ts#L35)
+
+#### Type Parameters
+
+##### Name
+
+`Name` *extends* `string`
+
+#### Parameters
+
+##### name
+
+`Name`
+
+#### Returns
+
+`null` \| [`FilterValue`](../type-aliases/FilterValue.md)\<`Name`, `PluginFilters`\>
+
+***
+
+### set()
+
+> **set**\<`Name`, `Value`\>(`name`, `value`, `isPlugin`): `Promise`\<`null` \| `Value`\>
+
+Defined in: [Queue/FilterManager.ts:39](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/FilterManager.ts#L39)
+
+#### Type Parameters
+
+##### Name
+
+`Name` *extends* `string`
+
+##### Value
+
+`Value` *extends* [`JsonLike`](../type-aliases/JsonLike.md) \| [`EqualizerFilter`](../type-aliases/EqualizerFilter.md) \| [`KaraokeFilter`](../interfaces/KaraokeFilter.md) \| [`TimescaleFilter`](../interfaces/TimescaleFilter.md) \| [`TremoloFilter`](../interfaces/TremoloFilter.md) \| [`VibratoFilter`](../interfaces/VibratoFilter.md) \| [`RotationFilter`](../interfaces/RotationFilter.md) \| [`DistortionFilter`](../interfaces/DistortionFilter.md) \| [`ChannelMixFilter`](../interfaces/ChannelMixFilter.md) \| [`LowPassFilter`](../interfaces/LowPassFilter.md)
+
+#### Parameters
+
+##### name
+
+`Name`
+
+##### value
+
+`Value`
+
+##### isPlugin
+
+`boolean` = `false`
+
+#### Returns
+
+`Promise`\<`null` \| `Value`\>
+
+***
+
+### has()
+
+> **has**\<`Name`\>(`name`): `boolean`
+
+Defined in: [Queue/FilterManager.ts:54](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/FilterManager.ts#L54)
+
+#### Type Parameters
+
+##### Name
+
+`Name` *extends* `string`
+
+#### Parameters
+
+##### name
+
+`Name`
+
+#### Returns
+
+`boolean`
+
+***
+
+### merge()
+
+> **merge**(`filters`): `Promise`\<[`Filters`](../interfaces/Filters.md)\<`PluginFilters`\>\>
+
+Defined in: [Queue/FilterManager.ts:62](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/FilterManager.ts#L62)
+
+#### Parameters
+
+##### filters
+
+[`Filters`](../interfaces/Filters.md)\<`PluginFilters`\>
+
+#### Returns
+
+`Promise`\<[`Filters`](../interfaces/Filters.md)\<`PluginFilters`\>\>
+
+***
+
+### remove()
+
+> **remove**\<`Name`\>(...`names`): `Promise`\<[`Filters`](../interfaces/Filters.md)\<`PluginFilters`\>\>
+
+Defined in: [Queue/FilterManager.ts:66](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/FilterManager.ts#L66)
+
+#### Type Parameters
+
+##### Name
+
+`Name` *extends* `string`
+
+#### Parameters
+
+##### names
+
+...`Name`[]
+
+#### Returns
+
+`Promise`\<[`Filters`](../interfaces/Filters.md)\<`PluginFilters`\>\>
+
+***
+
+### clear()
+
+> **clear**(): `Promise`\<[`Filters`](../interfaces/Filters.md)\<`PluginFilters`\>\>
+
+Defined in: [Queue/FilterManager.ts:77](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/FilterManager.ts#L77)
+
+#### Returns
+
+`Promise`\<[`Filters`](../interfaces/Filters.md)\<`PluginFilters`\>\>
+
+***
+
+### override()
+
+> **override**(`filters`): `Promise`\<[`Filters`](../interfaces/Filters.md)\<`PluginFilters`\>\>
+
+Defined in: [Queue/FilterManager.ts:81](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/FilterManager.ts#L81)
+
+#### Parameters
+
+##### filters
+
+[`Filters`](../interfaces/Filters.md)\<`PluginFilters`\>
+
+#### Returns
+
+`Promise`\<[`Filters`](../interfaces/Filters.md)\<`PluginFilters`\>\>

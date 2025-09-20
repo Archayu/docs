@@ -1,0 +1,85 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / WebSocketClosedEventPayload
+
+# Interface: WebSocketClosedEventPayload
+
+Defined in: [Typings/API/Websocket.ts:363](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L363)
+
+## Extends
+
+- [`BaseEventPayload`](BaseEventPayload.md)
+
+## Properties
+
+### type
+
+> **type**: [`WebSocketClosed`](../enumerations/EventType.md#websocketclosed)
+
+Defined in: [Typings/API/Websocket.ts:364](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L364)
+
+The type of event
+
+#### Overrides
+
+[`BaseEventPayload`](BaseEventPayload.md).[`type`](BaseEventPayload.md#type)
+
+***
+
+### code
+
+> **code**: `number`
+
+Defined in: [Typings/API/Websocket.ts:369](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L369)
+
+The [Discord close event code](https://discord.com/developers/docs/topics/opcodes-and-status-codes#voice-voice-close-event-codes)
+
+***
+
+### reason
+
+> **reason**: `string`
+
+Defined in: [Typings/API/Websocket.ts:374](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L374)
+
+The close reason
+
+***
+
+### byRemote
+
+> **byRemote**: `boolean`
+
+Defined in: [Typings/API/Websocket.ts:379](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L379)
+
+Whether the connection was closed by Discord
+
+***
+
+### op
+
+> **op**: [`Event`](../enumerations/OPType.md#event)
+
+Defined in: [Typings/API/Websocket.ts:277](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L277)
+
+The op type
+
+#### Inherited from
+
+[`BaseEventPayload`](BaseEventPayload.md).[`op`](BaseEventPayload.md#op)
+
+***
+
+### guildId
+
+> **guildId**: `string`
+
+Defined in: [Typings/API/Websocket.ts:287](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L287)
+
+The guild id
+
+#### Inherited from
+
+[`BaseEventPayload`](BaseEventPayload.md).[`guildId`](BaseEventPayload.md#guildid)

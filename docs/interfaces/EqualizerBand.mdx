@@ -1,0 +1,33 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / EqualizerBand
+
+# Interface: EqualizerBand
+
+Defined in: [Typings/API/Rest.ts:348](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L348)
+
+There are 15 bands (0-14) that can be changed. "gain" is the multiplier for the given band.
+The default value is 0. Valid values range from -0.25 to 1.0, where -0.25 means the given band is completely muted, and 0.25 means it is doubled.
+Modifying the gain could also change the volume of the output.
+
+## Properties
+
+### band
+
+> **band**: `number`
+
+Defined in: [Typings/API/Rest.ts:352](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L352)
+
+The band (0 to 14)
+
+***
+
+### gain
+
+> **gain**: `number`
+
+Defined in: [Typings/API/Rest.ts:357](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L357)
+
+The gain (-0.25 to 1.0)

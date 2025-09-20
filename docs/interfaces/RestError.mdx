@@ -1,0 +1,69 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / RestError
+
+# Interface: RestError
+
+Defined in: [Typings/API/Rest.ts:65](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L65)
+
+## Properties
+
+### timestamp
+
+> **timestamp**: `number`
+
+Defined in: [Typings/API/Rest.ts:69](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L69)
+
+The timestamp of the error in milliseconds since the Unix epoch
+
+***
+
+### status
+
+> **status**: `number`
+
+Defined in: [Typings/API/Rest.ts:74](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L74)
+
+The HTTP status code
+
+***
+
+### error
+
+> **error**: `string`
+
+Defined in: [Typings/API/Rest.ts:79](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L79)
+
+The HTTP status code message
+
+***
+
+### trace?
+
+> `optional` **trace**: `string`
+
+Defined in: [Typings/API/Rest.ts:84](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L84)
+
+The stack trace of the error when `trace=true` as query param has been sent
+
+***
+
+### message
+
+> **message**: `string`
+
+Defined in: [Typings/API/Rest.ts:89](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L89)
+
+The error message
+
+***
+
+### path
+
+> **path**: `string`
+
+Defined in: [Typings/API/Rest.ts:94](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L94)
+
+The request path

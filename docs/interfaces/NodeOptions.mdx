@@ -1,0 +1,205 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / NodeOptions
+
+# Interface: NodeOptions
+
+Defined in: [Typings/Node/Node.ts:102](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L102)
+
+## Extends
+
+- [`RESTOptions`](RESTOptions.md)
+
+## Properties
+
+### name
+
+> **name**: `string`
+
+Defined in: [Typings/Node/Node.ts:106](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L106)
+
+A unique name for this node
+
+***
+
+### clientId
+
+> **clientId**: `string`
+
+Defined in: [Typings/Node/Node.ts:111](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L111)
+
+The User Id of your Discord Bot
+
+***
+
+### statsInterval?
+
+> `optional` **statsInterval**: `number`
+
+Defined in: [Typings/Node/Node.ts:117](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L117)
+
+Interval at which this node dispatches it's stats.
+Default: `60_000`
+
+***
+
+### highestLatency?
+
+> `optional` **highestLatency**: `number`
+
+Defined in: [Typings/Node/Node.ts:123](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L123)
+
+An assumption of this node's highest possible latency.
+Default: `2_000`
+
+***
+
+### reconnectDelay?
+
+> `optional` **reconnectDelay**: `number`
+
+Defined in: [Typings/Node/Node.ts:129](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L129)
+
+Number of milliseconds to wait between each reconnect.
+Default: `10_000`
+
+***
+
+### reconnectLimit?
+
+> `optional` **reconnectLimit**: `number`
+
+Defined in: [Typings/Node/Node.ts:135](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L135)
+
+Number of reconnects to attempt on unusual disconnect.
+Default: `3`
+
+***
+
+### handshakeTimeout?
+
+> `optional` **handshakeTimeout**: `number`
+
+Defined in: [Typings/Node/Node.ts:141](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L141)
+
+Number of milliseconds to allow for initial handshake.
+Default: `5_000`
+
+***
+
+### origin
+
+> **origin**: `string`
+
+Defined in: [Typings/Node/REST.ts:7](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/REST.ts#L7)
+
+URL of your lavalink server
+
+#### Inherited from
+
+[`RESTOptions`](RESTOptions.md).[`origin`](RESTOptions.md#origin)
+
+***
+
+### password
+
+> **password**: `string`
+
+Defined in: [Typings/Node/REST.ts:12](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/REST.ts#L12)
+
+Password of your lavalink server
+
+#### Inherited from
+
+[`RESTOptions`](RESTOptions.md).[`password`](RESTOptions.md#password)
+
+***
+
+### version?
+
+> `optional` **version**: `number`
+
+Defined in: [Typings/Node/REST.ts:18](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/REST.ts#L18)
+
+The semver major of your lavalink server.
+Default: `4`
+
+#### Inherited from
+
+[`RESTOptions`](RESTOptions.md).[`version`](RESTOptions.md#version)
+
+***
+
+### userAgent?
+
+> `optional` **userAgent**: `string`
+
+Defined in: [Typings/Node/REST.ts:24](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/REST.ts#L24)
+
+The value to set the `User-Agent` header to.
+Default: `$client/$version ($repository)`
+
+#### Inherited from
+
+[`RESTOptions`](RESTOptions.md).[`userAgent`](RESTOptions.md#useragent)
+
+***
+
+### sessionId?
+
+> `optional` **sessionId**: `string`
+
+Defined in: [Typings/Node/REST.ts:29](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/REST.ts#L29)
+
+Id of the lavalink session you want to interact with (if any)
+
+#### Inherited from
+
+[`RESTOptions`](RESTOptions.md).[`sessionId`](RESTOptions.md#sessionid)
+
+***
+
+### stackTrace?
+
+> `optional` **stackTrace**: `boolean`
+
+Defined in: [Typings/Node/REST.ts:35](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/REST.ts#L35)
+
+Whether to include stack trace from lavalink server on error.
+Default: `false`
+
+#### Inherited from
+
+[`RESTOptions`](RESTOptions.md).[`stackTrace`](RESTOptions.md#stacktrace)
+
+***
+
+### retryLimit?
+
+> `optional` **retryLimit**: `number`
+
+Defined in: [Typings/Node/REST.ts:41](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/REST.ts#L41)
+
+Number of retries to allow for timed out requests.
+Default: `0`
+
+#### Inherited from
+
+[`RESTOptions`](RESTOptions.md).[`retryLimit`](RESTOptions.md#retrylimit)
+
+***
+
+### requestTimeout?
+
+> `optional` **requestTimeout**: `number`
+
+Defined in: [Typings/Node/REST.ts:47](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/REST.ts#L47)
+
+Number of milliseconds to allow per request.
+Default: `10_000`
+
+#### Inherited from
+
+[`RESTOptions`](RESTOptions.md).[`requestTimeout`](RESTOptions.md#requesttimeout)

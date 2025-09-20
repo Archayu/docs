@@ -1,0 +1,75 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / TrackEndEventPayload
+
+# Interface: TrackEndEventPayload
+
+Defined in: [Typings/API/Websocket.ts:299](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L299)
+
+## Extends
+
+- [`BaseEventPayload`](BaseEventPayload.md)
+
+## Properties
+
+### type
+
+> **type**: [`TrackEnd`](../enumerations/EventType.md#trackend)
+
+Defined in: [Typings/API/Websocket.ts:300](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L300)
+
+The type of event
+
+#### Overrides
+
+[`BaseEventPayload`](BaseEventPayload.md).[`type`](BaseEventPayload.md#type)
+
+***
+
+### track
+
+> **track**: [`APITrack`](APITrack.md)
+
+Defined in: [Typings/API/Websocket.ts:305](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L305)
+
+The track that ended playing
+
+***
+
+### reason
+
+> **reason**: [`TrackEndReason`](../enumerations/TrackEndReason.md)
+
+Defined in: [Typings/API/Websocket.ts:310](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L310)
+
+The reason the track ended
+
+***
+
+### op
+
+> **op**: [`Event`](../enumerations/OPType.md#event)
+
+Defined in: [Typings/API/Websocket.ts:277](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L277)
+
+The op type
+
+#### Inherited from
+
+[`BaseEventPayload`](BaseEventPayload.md).[`op`](BaseEventPayload.md#op)
+
+***
+
+### guildId
+
+> **guildId**: `string`
+
+Defined in: [Typings/API/Websocket.ts:287](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L287)
+
+The guild id
+
+#### Inherited from
+
+[`BaseEventPayload`](BaseEventPayload.md).[`guildId`](BaseEventPayload.md#guildid)

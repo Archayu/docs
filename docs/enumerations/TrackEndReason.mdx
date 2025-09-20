@@ -1,0 +1,64 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / TrackEndReason
+
+# Enumeration: TrackEndReason
+
+Defined in: [Typings/API/Websocket.ts:71](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L71)
+
+## Enumeration Members
+
+### Finished
+
+> **Finished**: `"finished"`
+
+Defined in: [Typings/API/Websocket.ts:76](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L76)
+
+The track finished playing.
+May start next: true
+
+***
+
+### LoadFailed
+
+> **LoadFailed**: `"loadFailed"`
+
+Defined in: [Typings/API/Websocket.ts:82](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L82)
+
+The track failed to load.
+May start next: true
+
+***
+
+### Stopped
+
+> **Stopped**: `"stopped"`
+
+Defined in: [Typings/API/Websocket.ts:88](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L88)
+
+The track was stopped.
+May start next: false
+
+***
+
+### Replaced
+
+> **Replaced**: `"replaced"`
+
+Defined in: [Typings/API/Websocket.ts:94](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L94)
+
+The track was replaced.
+May start next: false
+
+***
+
+### Cleanup
+
+> **Cleanup**: `"cleanup"`
+
+Defined in: [Typings/API/Websocket.ts:100](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L100)
+
+The track was cleaned up.
+May start next: false

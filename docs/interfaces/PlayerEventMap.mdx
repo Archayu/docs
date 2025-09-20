@@ -1,0 +1,169 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / PlayerEventMap
+
+# Interface: PlayerEventMap
+
+Defined in: [Typings/Main/Player.ts:13](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L13)
+
+## Extends
+
+- `Record`\<`string` & `object`, `any`\>
+
+## Indexable
+
+\[`key`: `string` & `object`\]: `any`
+
+## Properties
+
+### init
+
+> **init**: \[\]
+
+Defined in: [Typings/Main/Player.ts:14](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L14)
+
+***
+
+### nodeConnect
+
+> **nodeConnect**: \[[`Node`](../classes/Node.md), `number`\]
+
+Defined in: [Typings/Main/Player.ts:16](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L16)
+
+***
+
+### nodeReady
+
+> **nodeReady**: \[[`Node`](../classes/Node.md), `boolean`, `string`\]
+
+Defined in: [Typings/Main/Player.ts:17](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L17)
+
+***
+
+### nodeDispatch
+
+> **nodeDispatch**: \[[`Node`](../classes/Node.md), [`MessagePayload`](../type-aliases/MessagePayload.md)\]
+
+Defined in: [Typings/Main/Player.ts:18](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L18)
+
+***
+
+### nodeError
+
+> **nodeError**: \[[`Node`](../classes/Node.md), `Error`\]
+
+Defined in: [Typings/Main/Player.ts:19](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L19)
+
+***
+
+### nodeClose
+
+> **nodeClose**: \[[`Node`](../classes/Node.md), `number`, `string`\]
+
+Defined in: [Typings/Main/Player.ts:20](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L20)
+
+***
+
+### nodeDisconnect
+
+> **nodeDisconnect**: \[[`Node`](../classes/Node.md), `number`, `string`, `boolean`\]
+
+Defined in: [Typings/Main/Player.ts:21](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L21)
+
+***
+
+### voiceConnect
+
+> **voiceConnect**: \[[`VoiceState`](../classes/VoiceState.md)\]
+
+Defined in: [Typings/Main/Player.ts:23](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L23)
+
+***
+
+### voiceClose
+
+> **voiceClose**: \[[`VoiceState`](../classes/VoiceState.md), `number`, `string`, `boolean`\]
+
+Defined in: [Typings/Main/Player.ts:24](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L24)
+
+***
+
+### voiceChange
+
+> **voiceChange**: \[[`VoiceState`](../classes/VoiceState.md), [`Node`](../classes/Node.md), `boolean`\]
+
+Defined in: [Typings/Main/Player.ts:25](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L25)
+
+***
+
+### voiceDestroy
+
+> **voiceDestroy**: \[[`VoiceState`](../classes/VoiceState.md), `string`\]
+
+Defined in: [Typings/Main/Player.ts:26](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L26)
+
+***
+
+### queueCreate
+
+> **queueCreate**: \[[`Queue`](../classes/Queue.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>\]
+
+Defined in: [Typings/Main/Player.ts:28](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L28)
+
+***
+
+### queueUpdate
+
+> **queueUpdate**: \[[`Queue`](../classes/Queue.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>, [`PlayerState`](PlayerState.md)\]
+
+Defined in: [Typings/Main/Player.ts:29](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L29)
+
+***
+
+### queueFinish
+
+> **queueFinish**: \[[`Queue`](../classes/Queue.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>\]
+
+Defined in: [Typings/Main/Player.ts:30](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L30)
+
+***
+
+### queueDestroy
+
+> **queueDestroy**: \[[`Queue`](../classes/Queue.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>, `string`\]
+
+Defined in: [Typings/Main/Player.ts:31](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L31)
+
+***
+
+### trackStart
+
+> **trackStart**: \[[`Queue`](../classes/Queue.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>, [`Track`](../classes/Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>\]
+
+Defined in: [Typings/Main/Player.ts:33](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L33)
+
+***
+
+### trackStuck
+
+> **trackStuck**: \[[`Queue`](../classes/Queue.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>, [`Track`](../classes/Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>, `number`\]
+
+Defined in: [Typings/Main/Player.ts:34](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L34)
+
+***
+
+### trackError
+
+> **trackError**: \[[`Queue`](../classes/Queue.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>, [`Track`](../classes/Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>, [`Exception`](Exception.md)\]
+
+Defined in: [Typings/Main/Player.ts:35](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L35)
+
+***
+
+### trackFinish
+
+> **trackFinish**: \[[`Queue`](../classes/Queue.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md)\>, [`Track`](../classes/Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>, [`TrackEndReason`](../enumerations/TrackEndReason.md)\]
+
+Defined in: [Typings/Main/Player.ts:36](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L36)

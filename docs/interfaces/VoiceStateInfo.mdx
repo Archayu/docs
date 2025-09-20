@@ -1,0 +1,177 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / VoiceStateInfo
+
+# Interface: VoiceStateInfo
+
+Defined in: [Typings/Voice/VoiceManager.ts:39](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Voice/VoiceManager.ts#L39)
+
+## Extends
+
+- [`NonNullableProp`](../type-aliases/NonNullableProp.md)\<`Omit`\<[`VoiceStateUpdatePayload`](VoiceStateUpdatePayload.md)\[`"d"`\], `"user_id"` \| `"guild_id"`\>, `"channel_id"`\>.[`NonNullableProp`](../type-aliases/NonNullableProp.md)\<[`VoiceServerUpdatePayload`](VoiceServerUpdatePayload.md)\[`"d"`\], `"endpoint"`\>.`Pick`\<[`PlayerState`](PlayerState.md), `"connected"` \| `"ping"`\>
+
+## Properties
+
+### node\_session\_id
+
+> **node\_session\_id**: `string`
+
+Defined in: [Typings/Voice/VoiceManager.ts:43](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Voice/VoiceManager.ts#L43)
+
+***
+
+### region\_id
+
+> **region\_id**: `string`
+
+Defined in: [Typings/Voice/VoiceManager.ts:44](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Voice/VoiceManager.ts#L44)
+
+***
+
+### channel\_id
+
+> **channel\_id**: `string`
+
+Defined in: [Typings/Voice/VoiceManager.ts:19](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Voice/VoiceManager.ts#L19)
+
+#### Inherited from
+
+`NonNullableProp.channel_id`
+
+***
+
+### session\_id
+
+> **session\_id**: `string`
+
+Defined in: [Typings/Voice/VoiceManager.ts:21](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Voice/VoiceManager.ts#L21)
+
+#### Inherited from
+
+`NonNullableProp.session_id`
+
+***
+
+### deaf
+
+> **deaf**: `boolean`
+
+Defined in: [Typings/Voice/VoiceManager.ts:22](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Voice/VoiceManager.ts#L22)
+
+#### Inherited from
+
+`NonNullableProp.deaf`
+
+***
+
+### mute
+
+> **mute**: `boolean`
+
+Defined in: [Typings/Voice/VoiceManager.ts:23](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Voice/VoiceManager.ts#L23)
+
+#### Inherited from
+
+`NonNullableProp.mute`
+
+***
+
+### self\_deaf
+
+> **self\_deaf**: `boolean`
+
+Defined in: [Typings/Voice/VoiceManager.ts:24](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Voice/VoiceManager.ts#L24)
+
+#### Inherited from
+
+`NonNullableProp.self_deaf`
+
+***
+
+### self\_mute
+
+> **self\_mute**: `boolean`
+
+Defined in: [Typings/Voice/VoiceManager.ts:25](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Voice/VoiceManager.ts#L25)
+
+#### Inherited from
+
+`NonNullableProp.self_mute`
+
+***
+
+### suppress
+
+> **suppress**: `boolean`
+
+Defined in: [Typings/Voice/VoiceManager.ts:26](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Voice/VoiceManager.ts#L26)
+
+#### Inherited from
+
+`NonNullableProp.suppress`
+
+***
+
+### token
+
+> **token**: `string`
+
+Defined in: [Typings/Voice/VoiceManager.ts:33](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Voice/VoiceManager.ts#L33)
+
+#### Inherited from
+
+`NonNullableProp.token`
+
+***
+
+### guild\_id
+
+> **guild\_id**: `string`
+
+Defined in: [Typings/Voice/VoiceManager.ts:34](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Voice/VoiceManager.ts#L34)
+
+#### Inherited from
+
+`NonNullableProp.guild_id`
+
+***
+
+### endpoint
+
+> **endpoint**: `string`
+
+Defined in: [Typings/Voice/VoiceManager.ts:35](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Voice/VoiceManager.ts#L35)
+
+#### Inherited from
+
+`NonNullableProp.endpoint`
+
+***
+
+### connected
+
+> **connected**: `boolean`
+
+Defined in: [Typings/API/Websocket.ts:174](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L174)
+
+Whether Lavalink is connected to the voice gateway
+
+#### Inherited from
+
+[`PlayerState`](PlayerState.md).[`connected`](PlayerState.md#connected)
+
+***
+
+### ping
+
+> **ping**: `number`
+
+Defined in: [Typings/API/Websocket.ts:179](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L179)
+
+The ping of the node to the Discord voice server in milliseconds (`-1` if not connected)
+
+#### Inherited from
+
+[`PlayerState`](PlayerState.md).[`ping`](PlayerState.md#ping)

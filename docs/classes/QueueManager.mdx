@@ -1,0 +1,285 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / QueueManager
+
+# Class: QueueManager\<Context\>
+
+Defined in: [Queue/QueueManager.ts:16](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/QueueManager.ts#L16)
+
+## Type Parameters
+
+### Context
+
+`Context` *extends* `Record`\<`string`, `unknown`\> = [`EmptyObject`](../type-aliases/EmptyObject.md)
+
+## Implements
+
+- `Partial`\<`Map`\<`string`, [`Queue`](Queue.md)\<`Context`\>\>\>
+
+## Constructors
+
+### Constructor
+
+> **new QueueManager**\<`Context`\>(`player`): `QueueManager`\<`Context`\>
+
+Defined in: [Queue/QueueManager.ts:27](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/QueueManager.ts#L27)
+
+#### Parameters
+
+##### player
+
+[`Player`](Player.md)
+
+#### Returns
+
+`QueueManager`\<`Context`\>
+
+## Accessors
+
+### size
+
+#### Get Signature
+
+> **get** **size**(): `number`
+
+Defined in: [Queue/QueueManager.ts:31](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/QueueManager.ts#L31)
+
+##### Returns
+
+`number`
+
+the number of elements in the Map.
+
+#### Implementation of
+
+`Partial.size`
+
+***
+
+### cache
+
+#### Get Signature
+
+> **get** **cache**(): `Map`\<`string`, [`APIPlayer`](../interfaces/APIPlayer.md)\>
+
+Defined in: [Queue/QueueManager.ts:35](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/QueueManager.ts#L35)
+
+##### Returns
+
+`Map`\<`string`, [`APIPlayer`](../interfaces/APIPlayer.md)\>
+
+## Methods
+
+### get()
+
+> **get**(`guildId`): `undefined` \| [`Queue`](Queue.md)\<`Context`\>
+
+Defined in: [Queue/QueueManager.ts:39](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/QueueManager.ts#L39)
+
+Returns a specified element from the Map object. If the value that is associated to the provided key is an object, then you will get a reference to that object and any change made to that object will effectively modify it inside the Map.
+
+#### Parameters
+
+##### guildId
+
+`string`
+
+#### Returns
+
+`undefined` \| [`Queue`](Queue.md)\<`Context`\>
+
+Returns the element associated with the specified key. If no element is associated with the specified key, undefined is returned.
+
+#### Implementation of
+
+`Partial.get`
+
+***
+
+### has()
+
+> **has**(`guildId`): `boolean`
+
+Defined in: [Queue/QueueManager.ts:43](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/QueueManager.ts#L43)
+
+#### Parameters
+
+##### guildId
+
+`string`
+
+#### Returns
+
+`boolean`
+
+boolean indicating whether an element with the specified key exists or not.
+
+#### Implementation of
+
+`Partial.has`
+
+***
+
+### keys()
+
+> **keys**(): `MapIterator`\<`string`\>
+
+Defined in: [Queue/QueueManager.ts:47](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/QueueManager.ts#L47)
+
+Returns an iterable of keys in the map
+
+#### Returns
+
+`MapIterator`\<`string`\>
+
+#### Implementation of
+
+`Partial.keys`
+
+***
+
+### values()
+
+> **values**(): `MapIterator`\<[`Queue`](Queue.md)\<`Context`\>\>
+
+Defined in: [Queue/QueueManager.ts:51](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/QueueManager.ts#L51)
+
+Returns an iterable of values in the map
+
+#### Returns
+
+`MapIterator`\<[`Queue`](Queue.md)\<`Context`\>\>
+
+#### Implementation of
+
+`Partial.values`
+
+***
+
+### entries()
+
+> **entries**(): `MapIterator`\<\[`string`, [`Queue`](Queue.md)\<`Context`\>\]\>
+
+Defined in: [Queue/QueueManager.ts:55](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/QueueManager.ts#L55)
+
+Returns an iterable of key, value pairs for every entry in the map.
+
+#### Returns
+
+`MapIterator`\<\[`string`, [`Queue`](Queue.md)\<`Context`\>\]\>
+
+#### Implementation of
+
+`Partial.entries`
+
+***
+
+### create()
+
+> **create**(`options`): `Promise`\<[`Queue`](Queue.md)\<`Context`\>\>
+
+Defined in: [Queue/QueueManager.ts:59](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/QueueManager.ts#L59)
+
+#### Parameters
+
+##### options
+
+[`CreateQueueOptions`](../interfaces/CreateQueueOptions.md)\<`Context`\>
+
+#### Returns
+
+`Promise`\<[`Queue`](Queue.md)\<`Context`\>\>
+
+***
+
+### destroy()
+
+> **destroy**(`guildId`, `reason`): `Promise`\<`void`\>
+
+Defined in: [Queue/QueueManager.ts:72](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/QueueManager.ts#L72)
+
+#### Parameters
+
+##### guildId
+
+`string`
+
+##### reason
+
+`string` = `"destroyed"`
+
+#### Returns
+
+`Promise`\<`void`\>
+
+***
+
+### relocate()
+
+> **relocate**(`node`): `Promise`\<`void`\>
+
+Defined in: [Queue/QueueManager.ts:87](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/QueueManager.ts#L87)
+
+#### Parameters
+
+##### node
+
+`string`
+
+#### Returns
+
+`Promise`\<`void`\>
+
+***
+
+### onStateUpdate()
+
+> **onStateUpdate**(`payload`): `void`
+
+Defined in: [Queue/QueueManager.ts:139](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/QueueManager.ts#L139)
+
+#### Parameters
+
+##### payload
+
+[`PlayerUpdatePayload`](../interfaces/PlayerUpdatePayload.md)
+
+#### Returns
+
+`void`
+
+***
+
+### onEventUpdate()
+
+> **onEventUpdate**(`payload`): `Promise`\<`void`\>
+
+Defined in: [Queue/QueueManager.ts:154](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/QueueManager.ts#L154)
+
+#### Parameters
+
+##### payload
+
+[`EventPayload`](../type-aliases/EventPayload.md)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+***
+
+### \[iterator\]()
+
+> **\[iterator\]**(): `MapIterator`\<\[`string`, [`Queue`](Queue.md)\<`Context`\>\]\>
+
+Defined in: [Queue/QueueManager.ts:253](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Queue/QueueManager.ts#L253)
+
+#### Returns
+
+`MapIterator`\<\[`string`, [`Queue`](Queue.md)\<`Context`\>\]\>
+
+#### Implementation of
+
+`Partial.[iterator]`

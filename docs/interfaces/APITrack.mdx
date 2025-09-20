@@ -1,0 +1,59 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / APITrack
+
+# Interface: APITrack\<UserData, PluginInfo\>
+
+Defined in: [Typings/API/Rest.ts:97](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L97)
+
+## Type Parameters
+
+### UserData
+
+`UserData` *extends* [`JsonObject`](../type-aliases/JsonObject.md) = [`EmptyObject`](../type-aliases/EmptyObject.md)
+
+### PluginInfo
+
+`PluginInfo` *extends* [`JsonObject`](../type-aliases/JsonObject.md) = [`EmptyObject`](../type-aliases/EmptyObject.md)
+
+## Properties
+
+### encoded
+
+> **encoded**: `string`
+
+Defined in: [Typings/API/Rest.ts:101](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L101)
+
+The base64 encoded track data
+
+***
+
+### info
+
+> **info**: [`TrackInfo`](TrackInfo.md)
+
+Defined in: [Typings/API/Rest.ts:106](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L106)
+
+Info about the track
+
+***
+
+### pluginInfo
+
+> **pluginInfo**: `PluginInfo`
+
+Defined in: [Typings/API/Rest.ts:111](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L111)
+
+Additional track info provided by plugins
+
+***
+
+### userData
+
+> **userData**: `UserData`
+
+Defined in: [Typings/API/Rest.ts:116](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L116)
+
+Additional track data provided via the [Update Player](https://lavalink.dev/api/rest.html#update-player) endpoint

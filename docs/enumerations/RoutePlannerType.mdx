@@ -1,0 +1,49 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / RoutePlannerType
+
+# Enumeration: RoutePlannerType
+
+Defined in: [Typings/API/Rest.ts:31](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L31)
+
+## Enumeration Members
+
+### Rotating
+
+> **Rotating**: `"RotatingIpRoutePlanner"`
+
+Defined in: [Typings/API/Rest.ts:35](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L35)
+
+IP address used is switched on ban. Recommended for IPv4 blocks or IPv6 blocks smaller than a /64
+
+***
+
+### Nano
+
+> **Nano**: `"NanoIpRoutePlanner"`
+
+Defined in: [Typings/API/Rest.ts:40](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L40)
+
+IP address used is switched on clock update. Use with at least 1 /64 IPv6 block
+
+***
+
+### RotatingNano
+
+> **RotatingNano**: `"RotatingNanoIpRoutePlanner"`
+
+Defined in: [Typings/API/Rest.ts:45](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L45)
+
+IP address used is switched on clock update, rotates to a different /64 block on ban. Use with at least 2x /64 IPv6 blocks
+
+***
+
+### Balancing
+
+> **Balancing**: `"BalancingIpRoutePlanner"`
+
+Defined in: [Typings/API/Rest.ts:50](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L50)
+
+IP address used is selected at random per request. Recommended for larger IP blocks

@@ -1,0 +1,75 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / TrackStuckEventPayload
+
+# Interface: TrackStuckEventPayload
+
+Defined in: [Typings/API/Websocket.ts:349](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L349)
+
+## Extends
+
+- [`BaseEventPayload`](BaseEventPayload.md)
+
+## Properties
+
+### type
+
+> **type**: [`TrackStuck`](../enumerations/EventType.md#trackstuck)
+
+Defined in: [Typings/API/Websocket.ts:350](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L350)
+
+The type of event
+
+#### Overrides
+
+[`BaseEventPayload`](BaseEventPayload.md).[`type`](BaseEventPayload.md#type)
+
+***
+
+### track
+
+> **track**: [`APITrack`](APITrack.md)
+
+Defined in: [Typings/API/Websocket.ts:355](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L355)
+
+The track that got stuck
+
+***
+
+### thresholdMs
+
+> **thresholdMs**: `number`
+
+Defined in: [Typings/API/Websocket.ts:360](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L360)
+
+The threshold in milliseconds that was exceeded
+
+***
+
+### op
+
+> **op**: [`Event`](../enumerations/OPType.md#event)
+
+Defined in: [Typings/API/Websocket.ts:277](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L277)
+
+The op type
+
+#### Inherited from
+
+[`BaseEventPayload`](BaseEventPayload.md).[`op`](BaseEventPayload.md#op)
+
+***
+
+### guildId
+
+> **guildId**: `string`
+
+Defined in: [Typings/API/Websocket.ts:287](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Websocket.ts#L287)
+
+The guild id
+
+#### Inherited from
+
+[`BaseEventPayload`](BaseEventPayload.md).[`guildId`](BaseEventPayload.md#guildid)

@@ -1,0 +1,173 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / CloseCodes
+
+# Enumeration: CloseCodes
+
+Defined in: [Typings/Node/Node.ts:7](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L7)
+
+https://developer.mozilla.org/en-US/docs/Web/API/CloseEvent/code
+
+## Enumeration Members
+
+### Normal
+
+> **Normal**: `1000`
+
+Defined in: [Typings/Node/Node.ts:11](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L11)
+
+The connection successfully completed the purpose for which it was created.
+
+***
+
+### GoingAway
+
+> **GoingAway**: `1001`
+
+Defined in: [Typings/Node/Node.ts:17](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L17)
+
+The endpoint is going away, either because of a server failure or
+the browser navigating away from the page that opened the connection.
+
+***
+
+### ProtocolError
+
+> **ProtocolError**: `1002`
+
+Defined in: [Typings/Node/Node.ts:22](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L22)
+
+The endpoint is terminating the connection due to a protocol error.
+
+***
+
+### UnsupportedData
+
+> **UnsupportedData**: `1003`
+
+Defined in: [Typings/Node/Node.ts:28](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L28)
+
+The connection is being terminated because the endpoint received data of a type it cannot accept.
+(For example, a text-only endpoint received binary data.)
+
+***
+
+### Reserved
+
+> **Reserved**: `1004`
+
+Defined in: [Typings/Node/Node.ts:33](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L33)
+
+Reserved. A meaning might be defined in the future.
+
+***
+
+### NoStatusReceived
+
+> **NoStatusReceived**: `1005`
+
+Defined in: [Typings/Node/Node.ts:38](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L38)
+
+Reserved. Indicates that no status code was provided even though one was expected.
+
+***
+
+### Abnormal
+
+> **Abnormal**: `1006`
+
+Defined in: [Typings/Node/Node.ts:43](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L43)
+
+Reserved. Indicates that a connection was closed abnormally (that is, with no close frame being sent) when a status code is expected.
+
+***
+
+### InvalidFramePayloadData
+
+> **InvalidFramePayloadData**: `1007`
+
+Defined in: [Typings/Node/Node.ts:48](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L48)
+
+The endpoint is terminating the connection because a message was received that contained inconsistent data (e.g., non-UTF-8 data within a text message).
+
+***
+
+### PolicyViolation
+
+> **PolicyViolation**: `1008`
+
+Defined in: [Typings/Node/Node.ts:53](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L53)
+
+The endpoint is terminating the connection because it received a message that violates its policy. This is a generic status code, used when codes 1003 and 1009 are not suitable.
+
+***
+
+### MessageTooBig
+
+> **MessageTooBig**: `1009`
+
+Defined in: [Typings/Node/Node.ts:58](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L58)
+
+The endpoint is terminating the connection because a data frame was received that is too large.
+
+***
+
+### MandatoryExtension
+
+> **MandatoryExtension**: `1010`
+
+Defined in: [Typings/Node/Node.ts:63](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L63)
+
+The client is terminating the connection because it expected the server to negotiate one or more extension, but the server didn't.
+
+***
+
+### InternalError
+
+> **InternalError**: `1011`
+
+Defined in: [Typings/Node/Node.ts:68](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L68)
+
+The server is terminating the connection because it encountered an unexpected condition that prevented it from fulfilling the request.
+
+***
+
+### ServiceRestart
+
+> **ServiceRestart**: `1012`
+
+Defined in: [Typings/Node/Node.ts:73](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L73)
+
+The server is terminating the connection because it is restarting.
+
+***
+
+### TryAgainLater
+
+> **TryAgainLater**: `1013`
+
+Defined in: [Typings/Node/Node.ts:78](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L78)
+
+The server is terminating the connection due to a temporary condition, e.g., it is overloaded and is casting off some of its clients.
+
+***
+
+### BadGateway
+
+> **BadGateway**: `1014`
+
+Defined in: [Typings/Node/Node.ts:83](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L83)
+
+The server was acting as a gateway or proxy and received an invalid response from the upstream server. This is similar to 502 HTTP Status Code.
+
+***
+
+### TLSHandshake
+
+> **TLSHandshake**: `1015`
+
+Defined in: [Typings/Node/Node.ts:88](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Node/Node.ts#L88)
+
+Reserved. Indicates that the connection was closed due to a failure to perform a TLS handshake (e.g., the server certificate can't be verified).

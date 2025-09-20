@@ -1,0 +1,421 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / REST
+
+# Class: REST
+
+Defined in: [Node/REST.ts:31](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L31)
+
+## Constructors
+
+### Constructor
+
+> **new REST**(`options`): `REST`
+
+Defined in: [Node/REST.ts:52](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L52)
+
+#### Parameters
+
+##### options
+
+[`RESTOptions`](../interfaces/RESTOptions.md)
+
+#### Returns
+
+`REST`
+
+## Properties
+
+### origin
+
+> `readonly` **origin**: `string`
+
+Defined in: [Node/REST.ts:49](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L49)
+
+***
+
+### version
+
+> `readonly` **version**: `number`
+
+Defined in: [Node/REST.ts:50](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L50)
+
+## Accessors
+
+### timeout
+
+#### Get Signature
+
+> **get** **timeout**(): `number`
+
+Defined in: [Node/REST.ts:109](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L109)
+
+##### Returns
+
+`number`
+
+#### Set Signature
+
+> **set** **timeout**(`ms`): `void`
+
+Defined in: [Node/REST.ts:121](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L121)
+
+##### Parameters
+
+###### ms
+
+`number`
+
+##### Returns
+
+`void`
+
+***
+
+### sessionId
+
+#### Get Signature
+
+> **get** **sessionId**(): `null` \| `string`
+
+Defined in: [Node/REST.ts:113](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L113)
+
+##### Returns
+
+`null` \| `string`
+
+#### Set Signature
+
+> **set** **sessionId**(`id`): `void`
+
+Defined in: [Node/REST.ts:125](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L125)
+
+##### Parameters
+
+###### id
+
+`null` | `string`
+
+##### Returns
+
+`void`
+
+***
+
+### retryLimit
+
+#### Get Signature
+
+> **get** **retryLimit**(): `number`
+
+Defined in: [Node/REST.ts:117](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L117)
+
+##### Returns
+
+`number`
+
+#### Set Signature
+
+> **set** **retryLimit**(`count`): `void`
+
+Defined in: [Node/REST.ts:129](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L129)
+
+##### Parameters
+
+###### count
+
+`number`
+
+##### Returns
+
+`void`
+
+## Methods
+
+### dropSessionRequests()
+
+> **dropSessionRequests**(`reason`): `void`
+
+Defined in: [Node/REST.ts:177](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L177)
+
+#### Parameters
+
+##### reason
+
+`string`
+
+#### Returns
+
+`void`
+
+***
+
+### request()
+
+> **request**\<`T`, `D`\>(`method`, `endpoint`, `options?`): `Promise`\<`AxiosResponse`\<`T`, `D`, \{ \}\>\>
+
+Defined in: [Node/REST.ts:186](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L186)
+
+#### Type Parameters
+
+##### T
+
+`T`
+
+##### D
+
+`D` *extends* [`JsonLike`](../type-aliases/JsonLike.md) = [`EmptyObject`](../type-aliases/EmptyObject.md)
+
+#### Parameters
+
+##### method
+
+`Method`
+
+##### endpoint
+
+`string`
+
+##### options?
+
+[`RequestOptions`](../interfaces/RequestOptions.md)\<`D`, [`EmptyObject`](../type-aliases/EmptyObject.md)\>
+
+#### Returns
+
+`Promise`\<`AxiosResponse`\<`T`, `D`, \{ \}\>\>
+
+***
+
+### loadTracks()
+
+> **loadTracks**(`identifier`): `Promise`\<[`LoadResult`](../type-aliases/LoadResult.md)\>
+
+Defined in: [Node/REST.ts:221](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L221)
+
+#### Parameters
+
+##### identifier
+
+`string`
+
+#### Returns
+
+`Promise`\<[`LoadResult`](../type-aliases/LoadResult.md)\>
+
+***
+
+### decodeTrack()
+
+> **decodeTrack**(`encodedTrack`): `Promise`\<[`APITrack`](../interfaces/APITrack.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>\>
+
+Defined in: [Node/REST.ts:227](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L227)
+
+#### Parameters
+
+##### encodedTrack
+
+`string`
+
+#### Returns
+
+`Promise`\<[`APITrack`](../interfaces/APITrack.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>\>
+
+***
+
+### decodeTracks()
+
+> **decodeTracks**(`tracks`): `Promise`\<[`APITrack`](../interfaces/APITrack.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>[]\>
+
+Defined in: [Node/REST.ts:233](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L233)
+
+#### Parameters
+
+##### tracks
+
+`string`[]
+
+#### Returns
+
+`Promise`\<[`APITrack`](../interfaces/APITrack.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>[]\>
+
+***
+
+### fetchPlayers()
+
+> **fetchPlayers**(`sessionId`): `Promise`\<[`APIPlayer`](../interfaces/APIPlayer.md)[]\>
+
+Defined in: [Node/REST.ts:239](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L239)
+
+#### Parameters
+
+##### sessionId
+
+`string` = `...`
+
+#### Returns
+
+`Promise`\<[`APIPlayer`](../interfaces/APIPlayer.md)[]\>
+
+***
+
+### fetchPlayer()
+
+> **fetchPlayer**(`guildId`, `sessionId`): `Promise`\<[`APIPlayer`](../interfaces/APIPlayer.md)\>
+
+Defined in: [Node/REST.ts:245](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L245)
+
+#### Parameters
+
+##### guildId
+
+`string`
+
+##### sessionId
+
+`string` = `...`
+
+#### Returns
+
+`Promise`\<[`APIPlayer`](../interfaces/APIPlayer.md)\>
+
+***
+
+### updatePlayer()
+
+> **updatePlayer**(`guildId`, `options`, `params?`, `sessionId?`): `Promise`\<[`APIPlayer`](../interfaces/APIPlayer.md)\>
+
+Defined in: [Node/REST.ts:252](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L252)
+
+#### Parameters
+
+##### guildId
+
+`string`
+
+##### options
+
+[`PlayerUpdateRequestBody`](../interfaces/PlayerUpdateRequestBody.md)
+
+##### params?
+
+[`PlayerUpdateQueryParams`](../interfaces/PlayerUpdateQueryParams.md)
+
+##### sessionId?
+
+`string` = `...`
+
+#### Returns
+
+`Promise`\<[`APIPlayer`](../interfaces/APIPlayer.md)\>
+
+***
+
+### destroyPlayer()
+
+> **destroyPlayer**(`guildId`, `sessionId`): `Promise`\<`boolean`\>
+
+Defined in: [Node/REST.ts:268](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L268)
+
+#### Parameters
+
+##### guildId
+
+`string`
+
+##### sessionId
+
+`string` = `...`
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+***
+
+### updateSession()
+
+> **updateSession**(`options`, `sessionId`): `Promise`\<`Required`\<[`SessionUpdateRequestBody`](../interfaces/SessionUpdateRequestBody.md)\>\>
+
+Defined in: [Node/REST.ts:275](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L275)
+
+#### Parameters
+
+##### options
+
+[`SessionUpdateRequestBody`](../interfaces/SessionUpdateRequestBody.md)
+
+##### sessionId
+
+`string` = `...`
+
+#### Returns
+
+`Promise`\<`Required`\<[`SessionUpdateRequestBody`](../interfaces/SessionUpdateRequestBody.md)\>\>
+
+***
+
+### fetchInfo()
+
+> **fetchInfo**(): `Promise`\<[`LavalinkInfo`](../interfaces/LavalinkInfo.md)\>
+
+Defined in: [Node/REST.ts:284](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L284)
+
+#### Returns
+
+`Promise`\<[`LavalinkInfo`](../interfaces/LavalinkInfo.md)\>
+
+***
+
+### fetchStats()
+
+> **fetchStats**(): `Promise`\<[`NodeStats`](../interfaces/NodeStats.md)\>
+
+Defined in: [Node/REST.ts:289](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L289)
+
+#### Returns
+
+`Promise`\<[`NodeStats`](../interfaces/NodeStats.md)\>
+
+***
+
+### fetchRoutePlannerStatus()
+
+> **fetchRoutePlannerStatus**(): `Promise`\<[`RoutePlannerStatus`](../type-aliases/RoutePlannerStatus.md)\>
+
+Defined in: [Node/REST.ts:294](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L294)
+
+#### Returns
+
+`Promise`\<[`RoutePlannerStatus`](../type-aliases/RoutePlannerStatus.md)\>
+
+***
+
+### unmarkFailedAddress()
+
+> **unmarkFailedAddress**(`address`): `Promise`\<`boolean`\>
+
+Defined in: [Node/REST.ts:300](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L300)
+
+#### Parameters
+
+##### address
+
+`string`
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+***
+
+### unmarkAllFailedAddresses()
+
+> **unmarkAllFailedAddresses**(): `Promise`\<`boolean`\>
+
+Defined in: [Node/REST.ts:306](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Node/REST.ts#L306)
+
+#### Returns
+
+`Promise`\<`boolean`\>

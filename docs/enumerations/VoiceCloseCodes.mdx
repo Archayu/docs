@@ -1,0 +1,161 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / VoiceCloseCodes
+
+# Enumeration: VoiceCloseCodes
+
+Defined in: [Typings/Queue/QueueManager.ts:7](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L7)
+
+https://discord.com/developers/docs/topics/opcodes-and-status-codes#voice-voice-close-event-codes
+
+## Enumeration Members
+
+### UnknownOpcode
+
+> **UnknownOpcode**: `4001`
+
+Defined in: [Typings/Queue/QueueManager.ts:11](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L11)
+
+You sent an invalid [opcode](https://discord.com/developers/docs/topics/opcodes-and-status-codes#voice-voice-opcodes).
+
+***
+
+### FailedToDecodePayload
+
+> **FailedToDecodePayload**: `4002`
+
+Defined in: [Typings/Queue/QueueManager.ts:16](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L16)
+
+You sent an invalid payload in your [identifying](https://discord.com/developers/docs/events/gateway-events#identify) to the Gateway.
+
+***
+
+### NotAuthenticated
+
+> **NotAuthenticated**: `4003`
+
+Defined in: [Typings/Queue/QueueManager.ts:21](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L21)
+
+You sent a payload before [identifying](https://discord.com/developers/docs/events/gateway-events#identify) with the Gateway.
+
+***
+
+### AuthenticationFailed
+
+> **AuthenticationFailed**: `4004`
+
+Defined in: [Typings/Queue/QueueManager.ts:26](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L26)
+
+The token you sent in your identify payload is incorrect.
+
+***
+
+### AlreadyAuthenticated
+
+> **AlreadyAuthenticated**: `4005`
+
+Defined in: [Typings/Queue/QueueManager.ts:31](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L31)
+
+You sent more than one [identify](https://discord.com/developers/docs/events/gateway-events#identify) payload.
+
+***
+
+### SessionNoLongerValid
+
+> **SessionNoLongerValid**: `4006`
+
+Defined in: [Typings/Queue/QueueManager.ts:36](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L36)
+
+Your session is no longer valid.
+
+***
+
+### SessionTimeout
+
+> **SessionTimeout**: `4009`
+
+Defined in: [Typings/Queue/QueueManager.ts:41](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L41)
+
+Your session has timed out.
+
+***
+
+### ServerNotFound
+
+> **ServerNotFound**: `4011`
+
+Defined in: [Typings/Queue/QueueManager.ts:46](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L46)
+
+We can't find the server you're trying to connect to.
+
+***
+
+### UnknownProtocol
+
+> **UnknownProtocol**: `4012`
+
+Defined in: [Typings/Queue/QueueManager.ts:51](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L51)
+
+We didn't recognize the [protocol](https://discord.com/developers/docs/topics/voice-connections#establishing-a-voice-udp-connection-example-select-protocol-payload) you sent.
+
+***
+
+### Disconnected
+
+> **Disconnected**: `4014`
+
+Defined in: [Typings/Queue/QueueManager.ts:56](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L56)
+
+Disconnect individual client (you were kicked, the main gateway session was dropped, etc.). Should not reconnect.
+
+***
+
+### VoiceServerCrashed
+
+> **VoiceServerCrashed**: `4015`
+
+Defined in: [Typings/Queue/QueueManager.ts:61](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L61)
+
+The server crashed. Our bad! Try [resuming](https://discord.com/developers/docs/topics/voice-connections#resuming-voice-connection).
+
+***
+
+### UnknownEncryptionMode
+
+> **UnknownEncryptionMode**: `4016`
+
+Defined in: [Typings/Queue/QueueManager.ts:66](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L66)
+
+We didn't recognize your [encryption](https://discord.com/developers/docs/topics/voice-connections#transport-encryption-and-sending-voice).
+
+***
+
+### BadRequest
+
+> **BadRequest**: `4020`
+
+Defined in: [Typings/Queue/QueueManager.ts:71](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L71)
+
+You sent a malformed request.
+
+***
+
+### DisconnectedRateLimited
+
+> **DisconnectedRateLimited**: `4021`
+
+Defined in: [Typings/Queue/QueueManager.ts:76](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L76)
+
+Disconnect due to rate limit exceeded. Should not reconnect.
+
+***
+
+### DisconnectedCallTerminated
+
+> **DisconnectedCallTerminated**: `4022`
+
+Defined in: [Typings/Queue/QueueManager.ts:81](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Queue/QueueManager.ts#L81)
+
+Disconnect all clients due to call terminated (channel deleted, voice server changed, etc.). Should not reconnect.

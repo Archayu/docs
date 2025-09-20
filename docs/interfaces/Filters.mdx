@@ -1,0 +1,125 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / Filters
+
+# Interface: Filters\<PluginFilters\>
+
+Defined in: [Typings/API/Rest.ts:286](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L286)
+
+## Type Parameters
+
+### PluginFilters
+
+`PluginFilters` *extends* [`JsonObject`](../type-aliases/JsonObject.md) = [`EmptyObject`](../type-aliases/EmptyObject.md)
+
+## Properties
+
+### volume?
+
+> `optional` **volume**: `number`
+
+Defined in: [Typings/API/Rest.ts:290](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L290)
+
+Adjusts the player volume from 0.0 to 5.0, where 1.0 is 100%. Values >1.0 may cause clipping
+
+***
+
+### equalizer?
+
+> `optional` **equalizer**: [`EqualizerFilter`](../type-aliases/EqualizerFilter.md)
+
+Defined in: [Typings/API/Rest.ts:295](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L295)
+
+Adjusts 15 different bands
+
+***
+
+### karaoke?
+
+> `optional` **karaoke**: [`KaraokeFilter`](KaraokeFilter.md)
+
+Defined in: [Typings/API/Rest.ts:300](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L300)
+
+Eliminates part of a band, usually targeting vocals
+
+***
+
+### timescale?
+
+> `optional` **timescale**: [`TimescaleFilter`](TimescaleFilter.md)
+
+Defined in: [Typings/API/Rest.ts:305](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L305)
+
+Changes the speed, pitch, and rate
+
+***
+
+### tremolo?
+
+> `optional` **tremolo**: [`TremoloFilter`](TremoloFilter.md)
+
+Defined in: [Typings/API/Rest.ts:310](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L310)
+
+Creates a shuddering effect, where the volume quickly oscillates
+
+***
+
+### vibrato?
+
+> `optional` **vibrato**: [`VibratoFilter`](VibratoFilter.md)
+
+Defined in: [Typings/API/Rest.ts:315](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L315)
+
+Creates a shuddering effect, where the pitch quickly oscillates
+
+***
+
+### rotation?
+
+> `optional` **rotation**: [`RotationFilter`](RotationFilter.md)
+
+Defined in: [Typings/API/Rest.ts:320](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L320)
+
+Rotates the audio around the stereo channels/user headphones (aka Audio Panning)
+
+***
+
+### distortion?
+
+> `optional` **distortion**: [`DistortionFilter`](DistortionFilter.md)
+
+Defined in: [Typings/API/Rest.ts:325](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L325)
+
+Distorts the audio
+
+***
+
+### channelMix?
+
+> `optional` **channelMix**: [`ChannelMixFilter`](ChannelMixFilter.md)
+
+Defined in: [Typings/API/Rest.ts:330](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L330)
+
+Mixes both channels (left and right)
+
+***
+
+### lowPass?
+
+> `optional` **lowPass**: [`LowPassFilter`](LowPassFilter.md)
+
+Defined in: [Typings/API/Rest.ts:335](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L335)
+
+Filters higher frequencies
+
+***
+
+### pluginFilters?
+
+> `optional` **pluginFilters**: `PluginFilters`
+
+Defined in: [Typings/API/Rest.ts:340](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L340)
+
+Filter plugin configurations

@@ -1,0 +1,133 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / VoiceRegion
+
+# Class: VoiceRegion
+
+Defined in: [Voice/VoiceRegion.ts:8](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceRegion.ts#L8)
+
+## Constructors
+
+### Constructor
+
+> **new VoiceRegion**(`player`, `regionId`): `VoiceRegion`
+
+Defined in: [Voice/VoiceRegion.ts:14](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceRegion.ts#L14)
+
+#### Parameters
+
+##### player
+
+[`Player`](Player.md)
+
+##### regionId
+
+`string`
+
+#### Returns
+
+`VoiceRegion`
+
+## Properties
+
+### id
+
+> `readonly` **id**: `string`
+
+Defined in: [Voice/VoiceRegion.ts:12](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceRegion.ts#L12)
+
+## Accessors
+
+### nodes
+
+#### Get Signature
+
+> **get** **nodes**(): `string`[]
+
+Defined in: [Voice/VoiceRegion.ts:24](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceRegion.ts#L24)
+
+##### Returns
+
+`string`[]
+
+## Methods
+
+### forgetNode()
+
+> **forgetNode**(`name`): `void`
+
+Defined in: [Voice/VoiceRegion.ts:28](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceRegion.ts#L28)
+
+#### Parameters
+
+##### name
+
+`string`
+
+#### Returns
+
+`void`
+
+***
+
+### onPingUpdate()
+
+> **onPingUpdate**(`name`, `ping`, `time`): `void`
+
+Defined in: [Voice/VoiceRegion.ts:32](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceRegion.ts#L32)
+
+#### Parameters
+
+##### name
+
+`string`
+
+##### ping
+
+`number`
+
+##### time
+
+`number`
+
+#### Returns
+
+`void`
+
+***
+
+### getAveragePing()
+
+> **getAveragePing**(`name`): `number`
+
+Defined in: [Voice/VoiceRegion.ts:46](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceRegion.ts#L46)
+
+#### Parameters
+
+##### name
+
+`string`
+
+#### Returns
+
+`number`
+
+***
+
+### getRelevantNode()
+
+> **getRelevantNode**(...`exclusions`): `undefined` \| [`Node`](Node.md)
+
+Defined in: [Voice/VoiceRegion.ts:51](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Voice/VoiceRegion.ts#L51)
+
+#### Parameters
+
+##### exclusions
+
+...`string`[]
+
+#### Returns
+
+`undefined` \| [`Node`](Node.md)

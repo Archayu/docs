@@ -1,0 +1,113 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / PlayerOptions
+
+# Interface: PlayerOptions\<Plugins\>
+
+Defined in: [Typings/Main/Player.ts:49](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L49)
+
+## Type Parameters
+
+### Plugins
+
+`Plugins` *extends* [`Plugin`](Plugin.md)[] = [`Plugin`](Plugin.md)[]
+
+## Properties
+
+### nodes
+
+> **nodes**: [`CreateNodeOptions`](../type-aliases/CreateNodeOptions.md)[]
+
+Defined in: [Typings/Main/Player.ts:53](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L53)
+
+Options for creating node(s)
+
+***
+
+### plugins?
+
+> `optional` **plugins**: `Plugins`
+
+Defined in: [Typings/Main/Player.ts:58](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L58)
+
+Plugins to initialize after creating nodes
+
+***
+
+### queryPrefix?
+
+> `optional` **queryPrefix**: `string`
+
+Defined in: [Typings/Main/Player.ts:64](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L64)
+
+Default prefix to use for search queries (not URLs).
+Default: `ytsearch`
+
+***
+
+### relocateQueues?
+
+> `optional` **relocateQueues**: `boolean`
+
+Defined in: [Typings/Main/Player.ts:70](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L70)
+
+Whether to relocate queues across nodes on disruption.
+Default: `true`
+
+***
+
+### forwardVoiceUpdate()
+
+> **forwardVoiceUpdate**: (`guildId`, `payload`) => `Promise`\<`void`\>
+
+Defined in: [Typings/Main/Player.ts:77](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L77)
+
+Forward voice state updates to your bot's gateway connection
+
+#### Parameters
+
+##### guildId
+
+`string`
+
+Id of the guild this voice update is meant for
+
+##### payload
+
+[`VoiceUpdatePayload`](VoiceUpdatePayload.md)
+
+The voice state update payload to be forwarded
+
+#### Returns
+
+`Promise`\<`void`\>
+
+***
+
+### fetchRelatedTracks()?
+
+> `optional` **fetchRelatedTracks**: (`queue`, `track`) => `Promise`\<[`Track`](../classes/Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>[]\>
+
+Defined in: [Typings/Main/Player.ts:84](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/Main/Player.ts#L84)
+
+Return empty or populated array of related tracks
+
+#### Parameters
+
+##### queue
+
+[`Queue`](../classes/Queue.md)
+
+The queue requesting track(s)
+
+##### track
+
+[`Track`](../classes/Track.md)
+
+The track suggested for reference
+
+#### Returns
+
+`Promise`\<[`Track`](../classes/Track.md)\<[`EmptyObject`](../type-aliases/EmptyObject.md), [`EmptyObject`](../type-aliases/EmptyObject.md)\>[]\>

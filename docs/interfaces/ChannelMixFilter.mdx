@@ -1,0 +1,52 @@
+[**Discolink**](../README.md)
+
+***
+
+[Discolink](../globals.md) / ChannelMixFilter
+
+# Interface: ChannelMixFilter
+
+Defined in: [Typings/API/Rest.ts:498](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L498)
+
+Mixes both channels (left and right), with a configurable factor on how much each channel affects the other.
+With the defaults, both channels are kept independent of each other. Setting all factors to 0.5 means both channels get the same audio.
+
+## Properties
+
+### leftToLeft?
+
+> `optional` **leftToLeft**: `number`
+
+Defined in: [Typings/API/Rest.ts:502](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L502)
+
+The left to left channel mix factor (0.0 ≤ x ≤ 1.0)
+
+***
+
+### leftToRight?
+
+> `optional` **leftToRight**: `number`
+
+Defined in: [Typings/API/Rest.ts:507](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L507)
+
+The left to right channel mix factor (0.0 ≤ x ≤ 1.0)
+
+***
+
+### rightToLeft?
+
+> `optional` **rightToLeft**: `number`
+
+Defined in: [Typings/API/Rest.ts:512](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L512)
+
+The right to left channel mix factor (0.0 ≤ x ≤ 1.0)
+
+***
+
+### rightToRight?
+
+> `optional` **rightToRight**: `number`
+
+Defined in: [Typings/API/Rest.ts:517](https://github.com/Archayu/discolink/blob/ddfd70ea55cc6996bf3567765f64fb3824cd3f79/src/Typings/API/Rest.ts#L517)
+
+The right to right channel mix factor (0.0 ≤ x ≤ 1.0)
